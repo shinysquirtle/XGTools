@@ -1,0 +1,207 @@
+.root { -fx-font-family: "Microsoft YaHei UI", "Segoe UI"; -fx-font-size: 13px; -fx-background-color: #f5f7fb; }
+.title { -fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: #14243c; }
+.muted { -fx-text-fill: #63738b; }
+.button { -fx-background-color: #e5eaf3; -fx-text-fill: #223550; -fx-background-radius: 6; -fx-padding: 9 17; -fx-cursor: hand; }
+.button:hover { -fx-background-color: #d5deed; }
+.primary { -fx-background-color: #2864dc; -fx-text-fill: white; }
+.primary:hover { -fx-background-color: #2056c0; }
+.text-field, .combo-box { -fx-background-color: white; -fx-border-color: #d8e0ec; -fx-border-radius: 5; -fx-padding: 7; }
+.table-view { -fx-background-color: white; -fx-border-color: #d8e0ec; }
+.table-view .column-header { -fx-background-color: #eaf0f8; -fx-size: 36; }
+.table-row-cell { -fx-cell-size: 38; }
+.progress-bar { -fx-accent: #2864dc; }
+
+.navigation { -fx-background-color: #172840; }
+.brand { -fx-font-size: 25px; -fx-font-weight: bold; -fx-text-fill: white; }
+.nav-caption { -fx-text-fill: #aebfd7; -fx-line-spacing: 6; }
+.navigation .toggle-button { -fx-background-color: transparent; -fx-text-fill: #ccd9ed; -fx-alignment: center-left; -fx-padding: 12 18; -fx-background-radius: 7; }
+.navigation .toggle-button:selected { -fx-background-color: #315a92; -fx-text-fill: white; }
+
+/* PDF 设置面板：固定标签列、统一控件高度，保留蓝色主题。 */
+.settings-scroll, .settings-scroll > .viewport {
+    -fx-background-color: transparent; -fx-background-insets: 0; -fx-padding: 0;
+}
+.pdf-settings {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 12;
+    -fx-border-color: #e0e7f1;
+    -fx-border-radius: 12;
+}
+.settings-title { -fx-font-size: 16px; -fx-font-weight: bold; -fx-text-fill: #1d3557; }
+.settings-caption { -fx-font-size: 12px; -fx-text-fill: #8290a5; }
+.setting-label { -fx-text-fill: #52627a; -fx-font-size: 12px; }
+.mode-description {
+    -fx-background-color: #eff6ff; -fx-background-radius: 8;
+    -fx-padding: 10 12; -fx-text-fill: #3a6597; -fx-font-size: 12px;
+}
+.pdf-settings .text-field {
+    -fx-background-color: #f8fafd; -fx-border-color: #dce5f0;
+    -fx-background-radius: 7; -fx-border-radius: 7;
+    -fx-padding: 8 12; -fx-text-fill: #263c58;
+}
+.pdf-choice {
+    -fx-background-color: #f8fafd; -fx-border-color: #dce5f0;
+    -fx-background-radius: 7; -fx-border-radius: 7;
+    -fx-padding: 0; -fx-cursor: hand;
+}
+.pdf-choice:hover { -fx-background-color: #f0f6ff; -fx-border-color: #9dbdec; }
+.pdf-choice:focused { -fx-border-color: #3980e8; -fx-background-color: #ffffff; }
+.pdf-choice > .list-cell { -fx-padding: 8 12; -fx-text-fill: #24456e; -fx-background-color: transparent; }
+.pdf-choice > .arrow-button { -fx-padding: 0 13; -fx-background-color: transparent; }
+.pdf-choice > .arrow-button > .arrow { -fx-background-color: #5781b8; }
+.combo-box-popup > .list-view {
+    -fx-background-color: white; -fx-background-radius: 9;
+    -fx-border-color: #dae5f2; -fx-border-radius: 9;
+    -fx-padding: 5; -fx-effect: dropshadow(gaussian, rgba(21, 49, 90, 0.14), 16, 0.12, 0, 5);
+}
+.combo-box-popup > .list-view .list-cell {
+    -fx-background-color: white; -fx-background-radius: 6; -fx-padding: 7 10;
+    -fx-text-fill: #263c58;
+}
+.combo-box-popup > .list-view .list-cell:filled:hover { -fx-background-color: #f0f6ff; }
+.combo-box-popup > .list-view .list-cell:filled:selected { -fx-background-color: #e5f0ff; -fx-text-fill: #225eb1; }
+.mode-item-title { -fx-font-size: 13px; -fx-font-weight: bold; -fx-text-fill: #24456e; }
+.mode-item-caption { -fx-font-size: 11px; -fx-text-fill: #7b8ca4; }
+.pdf-settings .spinner {
+    -fx-background-color: #f8fafd; -fx-border-color: #dce5f0;
+    -fx-background-radius: 7; -fx-border-radius: 7; -fx-padding: 0;
+}
+.pdf-settings .spinner > .text-field {
+    -fx-background-color: transparent; -fx-border-color: transparent; -fx-padding: 8 12;
+}
+.pdf-settings .spinner > .increment-arrow-button,
+.pdf-settings .spinner > .decrement-arrow-button {
+    -fx-background-color: #edf3fb; -fx-padding: 4 10; -fx-cursor: hand;
+}
+.pdf-settings .spinner > .increment-arrow-button:hover,
+.pdf-settings .spinner > .decrement-arrow-button:hover { -fx-background-color: #deebfc; }
+.pdf-settings .spinner > .increment-arrow-button > .increment-arrow,
+.pdf-settings .spinner > .decrement-arrow-button > .decrement-arrow { -fx-background-color: #6485b1; }
+.pdf-settings .directory-button { -fx-background-color: #edf4ff; -fx-text-fill: #3268ad; -fx-background-radius: 7; }
+.pdf-settings .directory-button:hover { -fx-background-color: #dfedff; }
+.pdf-settings .combo-box:disabled, .pdf-settings .spinner:disabled { -fx-opacity: 0.48; }
+
+/* 设置说明统一样式；标签上的问号在控件禁用时仍可悬停。 */
+.help-indicator {
+    -fx-font-size: 10px; -fx-font-weight: bold;
+    -fx-text-fill: #467fc5; -fx-background-color: #eaf2ff;
+    -fx-background-radius: 8; -fx-alignment: center;
+    -fx-min-width: 16px; -fx-pref-width: 16px; -fx-max-width: 16px;
+    -fx-min-height: 16px; -fx-pref-height: 16px; -fx-max-height: 16px;
+    -fx-cursor: help;
+}
+.setting-tooltip {
+    -fx-background-color: #fdfefe; -fx-text-fill: #2e4668;
+    -fx-background-radius: 9; -fx-border-color: #cbdcf0; -fx-border-radius: 9;
+    -fx-font-family: "Microsoft YaHei UI", "Segoe UI"; -fx-font-size: 13px;
+    -fx-padding: 14 16; -fx-effect: dropshadow(gaussian, rgba(23, 48, 84, 0.18), 15, 0.1, 0, 4);
+}
+
+/* 统一结果表格：固定行高，详情仅显示摘要，原始文本保留在详情窗口。 */
+.result-table {
+    -fx-background-color: white; -fx-background-insets: 0;
+    -fx-border-color: #dfe7f2; -fx-border-width: 1;
+    -fx-background-radius: 10; -fx-border-radius: 10; -fx-padding: 0;
+    -fx-selection-bar: #eaf3ff; -fx-selection-bar-non-focused: #eaf3ff;
+}
+.result-table:focused { -fx-border-color: #b9d2f3; }
+.result-table .column-header-background, .result-table .column-header, .result-table .filler {
+    -fx-background-color: #edf3fb; -fx-background-insets: 0; -fx-border-width: 0; -fx-size: 42;
+}
+.result-table .column-header .label {
+    -fx-alignment: center-left; -fx-padding: 0 12;
+    -fx-font-size: 12px; -fx-font-weight: bold; -fx-text-fill: #536c8d;
+}
+.result-table .column-header.number-column .label { -fx-alignment: center-right; }
+.result-table .table-row-cell { -fx-background-insets: 0; -fx-padding: 0; -fx-cell-size: 46; }
+.result-table .table-row-cell:filled:even { -fx-background-color: white; }
+.result-table .table-row-cell:filled:odd { -fx-background-color: #fafcff; }
+.result-table .table-row-cell:filled:hover { -fx-background-color: #f1f7ff; }
+.result-table .table-row-cell:filled:selected { -fx-background-color: #e7f1ff; }
+.result-table .table-cell {
+    -fx-background-color: transparent; -fx-text-fill: #354b68;
+    -fx-padding: 0 12; -fx-border-color: transparent transparent #edf2f8 transparent;
+    -fx-border-width: 0 0 1 0; -fx-alignment: center-left; -fx-font-size: 12px;
+}
+.result-table .table-row-cell:filled:selected .table-cell { -fx-text-fill: #204c83; }
+.result-table .table-row-cell:empty, .result-table .table-row-cell:empty .table-cell {
+    -fx-background-color: white; -fx-border-color: transparent;
+}
+.result-table .placeholder .label { -fx-text-fill: #8b9bb1; -fx-font-size: 13px; }
+.status-badge { -fx-padding: 4 9; -fx-background-radius: 6; -fx-font-size: 11px; -fx-font-weight: bold; }
+.status-error { -fx-background-color: #fff0f0; -fx-text-fill: #c84646; }
+.status-success { -fx-background-color: #eaf7f1; -fx-text-fill: #28825c; }
+.status-warning { -fx-background-color: #fff5df; -fx-text-fill: #a47120; }
+.status-running { -fx-background-color: #e8f1ff; -fx-text-fill: #3675cb; }
+.status-neutral { -fx-background-color: #edf1f6; -fx-text-fill: #708199; }
+
+/* 全应用滚动条：细蓝灰滑块，去除系统箭头和立体边框。 */
+.scroll-bar { -fx-background-color: transparent; -fx-background-insets: 0; -fx-padding: 2; }
+.scroll-bar:vertical { -fx-pref-width: 10; -fx-min-width: 10; }
+.scroll-bar:horizontal { -fx-pref-height: 10; -fx-min-height: 10; }
+.scroll-bar > .track, .scroll-bar > .track-background {
+    -fx-background-color: #f0f4fa; -fx-background-radius: 5; -fx-border-width: 0;
+}
+.scroll-bar > .thumb { -fx-background-color: #b8cbe3; -fx-background-radius: 5; -fx-background-insets: 0; }
+.scroll-bar > .thumb:hover { -fx-background-color: #91b1d9; }
+.scroll-bar > .thumb:pressed { -fx-background-color: #7098c9; }
+.scroll-bar > .increment-button, .scroll-bar > .decrement-button {
+    -fx-background-color: transparent; -fx-padding: 0;
+    -fx-min-width: 0; -fx-pref-width: 0; -fx-max-width: 0;
+    -fx-min-height: 0; -fx-pref-height: 0; -fx-max-height: 0;
+}
+.scroll-bar > .increment-button > .increment-arrow,
+.scroll-bar > .decrement-button > .decrement-arrow { -fx-shape: ""; -fx-padding: 0; }
+.scroll-pane > .corner, .result-table .corner { -fx-background-color: transparent; }
+.settings-scroll { -fx-border-width: 0; -fx-background-color: transparent; -fx-background-insets: 0; }
+
+.context-menu { -fx-background-color: white; -fx-padding: 5; -fx-background-radius: 8; -fx-border-color: #d9e4f1; -fx-border-radius: 8; }
+.menu-item { -fx-padding: 8 14; -fx-background-radius: 5; }
+.menu-item:focused { -fx-background-color: #eaf3ff; }
+.menu-item:focused .label, .menu-item .label { -fx-text-fill: #315071; }
+.result-detail-dialog { -fx-background-color: #f5f8fd; -fx-padding: 16; }
+.result-detail-dialog > .header-panel { -fx-background-color: transparent; }
+.result-detail-dialog .header-panel .label { -fx-text-fill: #24476f; -fx-font-size: 15px; -fx-font-weight: bold; }
+.result-detail-text {
+    -fx-font-family: "Consolas", "Microsoft YaHei UI"; -fx-font-size: 13px;
+    -fx-text-fill: #324b6c; -fx-background-color: white; -fx-border-color: #dbe5f1; -fx-border-radius: 7;
+}
+.result-detail-text .content { -fx-background-color: white; -fx-padding: 12; }
+
+/* 图片工具：蓝色选择卡片、轻量滑块和固定宽度质量数值。 */
+.image-option {
+    -fx-background-color: #f7f9fd; -fx-border-color: #dde6f2;
+    -fx-background-radius: 7; -fx-border-radius: 7;
+    -fx-padding: 8 12; -fx-label-padding: 0 0 0 8;
+    -fx-text-fill: #506681; -fx-cursor: hand;
+}
+.image-option:hover { -fx-background-color: #eef5ff; -fx-border-color: #adc9ee; }
+.image-option:selected { -fx-background-color: #eaf3ff; -fx-border-color: #c0d8f6; -fx-text-fill: #2864bc; }
+.image-option:focused { -fx-border-color: #4b8be1; }
+.image-option > .box {
+    -fx-background-color: white; -fx-background-insets: 0;
+    -fx-border-color: #b6c9e0; -fx-border-width: 1;
+    -fx-background-radius: 4; -fx-border-radius: 4; -fx-padding: 3;
+}
+.image-option:selected > .box { -fx-background-color: #3476df; -fx-border-color: #3476df; }
+.image-option > .box > .mark { -fx-background-color: transparent; -fx-padding: 4; }
+.image-option:selected > .box > .mark { -fx-background-color: white; }
+.image-quality { -fx-padding: 10 0; }
+.image-quality > .track {
+    -fx-background-color: #dce8f8; -fx-background-insets: 0;
+    -fx-background-radius: 4; -fx-padding: 3 0;
+}
+.image-quality > .thumb {
+    -fx-background-color: #3476df; -fx-background-insets: 0;
+    -fx-background-radius: 10; -fx-border-color: white; -fx-border-width: 2;
+    -fx-border-radius: 10; -fx-padding: 7; -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(40, 100, 180, 0.22), 5, 0.1, 0, 1);
+}
+.image-quality:hover > .thumb, .image-quality:focused > .thumb { -fx-background-color: #205fc8; -fx-border-color: #e7f0ff; }
+.image-quality:disabled, .image-option:disabled { -fx-opacity: 0.45; }
+.quality-value {
+    -fx-background-color: #eaf3ff; -fx-background-radius: 7;
+    -fx-text-fill: #2864bc; -fx-font-weight: bold; -fx-font-size: 13px;
+    -fx-alignment: center; -fx-padding: 7 10;
+    -fx-min-width: 60; -fx-pref-width: 60; -fx-max-width: 60;
+}

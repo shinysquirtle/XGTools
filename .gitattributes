@@ -1,0 +1,4 @@
+* text=auto
+vendor/ghostscript/** -text
+*.png binary
+*.ico binary
