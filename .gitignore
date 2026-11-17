@@ -3,3 +3,10 @@
 /.idea/
 *.iml
 *.log
+
+# Codex / agent local configuration and temporary files
+.codex/
+.agents/
+AGENTS.md
+AGENTS.override.md
+codex-clipboard-*
